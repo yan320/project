@@ -47,7 +47,7 @@ class Env():
         heading = round(self.angle, 2)
         min_range = 0.12  
         done = False
-
+        # 每个方向的射线的角度
         scan_range.append(max(scan[-90], scan[-91], scan[-92]))
         scan_range.append(max(scan[-70], scan[-71], scan[-72]))
         scan_range.append(max(scan[-50], scan[-51], scan[-52]))
