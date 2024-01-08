@@ -1,16 +1,8 @@
-# Reinforcement Learning with DDPG
-
-For this project my goal is to create a Deep reinforcement learning Code that can avoid obstacles while trying to get to a target
-
-## Base Idea
-
-I saw a code of a DQN agent in the repository of ROBOTIS. But to create a better agent to control Robots I didn't see DQN with too much help in project because it only permits discrete actions. So my idea were to create a DDPG algorithm's agent based. A DDPG agent permits continous control for a robot. In my case I have as outputs: linear velocity (0 ~ 0.22m/s) and angular velocity (-1 ~ 1rad/s).
-
-- https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning
+# Reinforcement Learning with SAC for Navigaiton
 
 ## Libraries
 
-[Pytorch]
+[Pytorch][ROS Noetic][python 3.8]
 
 ## ROS 
 You can find the packages the I used here:
