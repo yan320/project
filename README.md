@@ -37,7 +37,7 @@ And
 ```
 <scan>
   <horizontal>
-    <samples>360</samples>            # The number of sample. Modify it to 10
+    <samples>360</samples>            # The number of sample. Modify it to 24
     <resolution>1</resolution>
     <min_angle>0.0</min_angle>
     <max_angle>6.28319</max_angle>
@@ -48,11 +48,29 @@ And
 ## Run Code
 I have four stage as in the examples of Robotis. But I dont know yet my code dont have a geat performance in stage 3.
 
-First to run:
+First to run(cep):
 ```
 roslaunch turtlebot3_gazebo turtlebot3_stage_{number_of_stage}.launch
 ```
 In another terminal run:
 ```
-roslaunch project ddpg_stage_{number_of_stage}.launch
+roslaunch project sac_cep_{number_of_stage}.launch
+```
+
+First to run(fl):
+```
+roslaunch turtlebot3_gazebo turtlebot3_stage_{number_of_stage}.launch
+```
+In another terminal run:
+```
+roslaunch project sac_fl_{number_of_stage}.launch
+```
+
+First to run(scf):
+```
+roslaunch turtlebot3_gazebo turtlebot3_stage_{number_of_stage}.launch
+```
+In another terminal run:
+```
+roslaunch project scf_stage_{number_of_stage}.launch
 ```
